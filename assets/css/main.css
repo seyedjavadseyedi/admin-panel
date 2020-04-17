@@ -262,6 +262,11 @@ table {
   top: 0;
 }
 
+.main-section canvas {
+  position: absolute;
+  z-index: 0;
+}
+
 .left-section,
 .right-section {
   color: #fff;
@@ -280,6 +285,10 @@ table {
 
 .left-section p {
   line-height: 24px;
+}
+
+.right-section {
+  z-index: 2;
 }
 
 .right-section h5 {

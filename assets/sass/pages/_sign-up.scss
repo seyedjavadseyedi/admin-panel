@@ -13,6 +13,10 @@
     right: 0;
     top: 0;
   }
+  canvas {
+    position: absolute;
+    z-index: 0;
+  }
 }
 
 .left-section,
@@ -33,6 +37,7 @@
 }
 
 .right-section {
+  z-index: 2;
   h5 {
     text-transform: capitalize;
     font-size: 1.8rem;
