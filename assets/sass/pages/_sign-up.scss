@@ -1,5 +1,108 @@
-.bg {
-    background: red;
-    width: 100px;
-    height: 100px;
+.main-section {
+  background: linear-gradient(45deg, #004e92 10%, #000428 70%);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 450px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.left-section,
+.right-section {
+  color: #fff;
+}
+.left-section {
+    margin: 0 4rem;
+  h3 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  p {
+    line-height: 24px;
+  }
+}
+
+.right-section {
+  h5 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  form {
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    .form-input {
+      margin-bottom: 2rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        padding: 10px;
+        transition: box-shadow 0.2s 0.1s;
+        color: #fff;
+        &:focus {
+          background: linear-gradient(to right, #004E92, #000428);
+          color: #fff;
+          box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+          border-color: transparent;
+        }
+      }
+      i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      small {
+          position: absolute;
+          top: 100%;
+        //   display: none;
+      }
+    }
+
+    .form-btn {
+    button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            transition: box-shadow 0.2s 0.1s;
+        }
+        button.disable {
+            color: #9E9E9E;
+            background: #d0d0d0;
+        }
+        button.active {
+            color: #fff;
+            background: linear-gradient(to right, #004E92, #000428);
+            &:hover {
+                cursor: pointer;
+                box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    .back-link {
+        text-align: center;
+        a { 
+            color: #003C78;
+            font-weight: bold;
+        }
+    }
+  }
 }

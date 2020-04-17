@@ -1,16 +1,54 @@
 /* Reset HTML Elements */
 /* ----------------------------------------- */
-*, html, body, div, dl, dt, dd, ul, ol, li, pre, form, label, fieldset, input, p, blockquote, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
 }
 
 body {
-  text-align: right;
   overflow-x: hidden;
 }
 
-article, aside, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
   display: block;
 }
 
@@ -31,11 +69,20 @@ table {
   margin: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
   font-style: normal;
   font-weight: normal;
 }
@@ -44,12 +91,14 @@ ul {
   list-style: none;
 }
 
-caption, th {
+caption,
+th {
   text-align: right;
   font-weight: bold;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: '';
 }
 
@@ -75,7 +124,8 @@ a {
   color: #333;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -90,8 +140,6 @@ a:active {
 
 p {
   line-height: 32px;
-  direction: rtl;
-  font-family: 'IRANSans', arial, tahoma;
 }
 
 .clearfix:after {
@@ -108,11 +156,36 @@ p {
   clear: both;
 }
 
-h1, h2, h3, h4, h5, h6, figcaption, pre, a, p, input, textarea, select, label, table, strong, small, span, time, ol, ul {
-  font-family: 'IRANSans', arial, tahoma;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption,
+pre,
+a,
+p,
+input,
+textarea,
+select,
+label,
+table,
+strong,
+small,
+span,
+time,
+ol,
+ul {
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   margin: 0.6rem 0;
 }
@@ -147,11 +220,13 @@ h6 {
   line-height: 1.875rem;
 }
 
-input[type="submit"], input[type="button"] {
+input[type='submit'],
+input[type='button'] {
   cursor: pointer;
 }
 
-input, button {
+input,
+button {
   border: none;
   background: none;
 }
@@ -164,9 +239,144 @@ table {
   font-size: 0.8rem;
 }
 
-.bg {
-  background: red;
-  width: 100px;
-  height: 100px;
+.main-section {
+  background: linear-gradient(45deg, #004e92 10%, #000428 70%);
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section svg {
+  width: 450px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.left-section,
+.right-section {
+  color: #fff;
+}
+
+.left-section {
+  margin: 0 4rem;
+}
+
+.left-section h3 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.left-section p {
+  line-height: 24px;
+}
+
+.right-section h5 {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.right-section form {
+  padding: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.right-section form .form-input {
+  margin-bottom: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-section form .form-input input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-transition: -webkit-box-shadow 0.2s 0.1s;
+  transition: -webkit-box-shadow 0.2s 0.1s;
+  transition: box-shadow 0.2s 0.1s;
+  transition: box-shadow 0.2s 0.1s, -webkit-box-shadow 0.2s 0.1s;
+  color: #fff;
+}
+
+.right-section form .form-input input:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#004E92), to(#000428));
+  background: linear-gradient(to right, #004E92, #000428);
+  color: #fff;
+  -webkit-box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+          box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+  border-color: transparent;
+}
+
+.right-section form .form-input i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.right-section form .form-input small {
+  position: absolute;
+  top: 100%;
+}
+
+.right-section form .form-btn button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  -webkit-transition: -webkit-box-shadow 0.2s 0.1s;
+  transition: -webkit-box-shadow 0.2s 0.1s;
+  transition: box-shadow 0.2s 0.1s;
+  transition: box-shadow 0.2s 0.1s, -webkit-box-shadow 0.2s 0.1s;
+}
+
+.right-section form .form-btn button.disable {
+  color: #9E9E9E;
+  background: #d0d0d0;
+}
+
+.right-section form .form-btn button.active {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#004E92), to(#000428));
+  background: linear-gradient(to right, #004E92, #000428);
+}
+
+.right-section form .form-btn button.active:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+          box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.right-section form .back-link {
+  text-align: center;
+}
+
+.right-section form .back-link a {
+  color: #003C78;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

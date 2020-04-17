@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,89 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/main.css">
+
+
 </head>
+
 <body>
-    
-    <div class="bg">hello</div>
+
+    <main role="main" class="main-section">
+        <svg viewBox="0 0 500 100vh">
+            <defs>
+                <linearGradient id="linear-gradient" x1="0.2" y1="0.9" x2="0.82" y2="0.212"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#00b4db" />
+                    <stop offset="1" stop-color="#0083b0" />
+                </linearGradient>
+                <filter id="Path_1" x="0" y="0" width="500" height="100vh" filterUnits="userSpaceOnUse">
+                    <feOffset dx="-8" dy="-7" input="SourceAlpha" />
+                    <feGaussianBlur stdDeviation="11.5" result="blur" />
+                    <feFlood flood-color="#fff" flood-opacity="0.161" />
+                    <feComposite operator="in" in2="blur" />
+                    <feComposite in="SourceGraphic" />
+                </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+                <path id="Path_1-2" data-name="Path 1"
+                    d="M70.306,0H500V1080H139.467S188.549,952.636,41.3,584.521,70.306,0,70.306,0Z"
+                    transform="translate(59.88 -41.5)" fill="url(#linear-gradient)" />
+            </g>
+        </svg>
+
+        <!-- <canvas></canvas> -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+
+                    <div class="left-section">
+                        <h3>Welcome to the admin panel</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto tempora, minus saepe
+                            soluta consectetur corporis consequuntur, earum quod ab eius esse aliquam, voluptatibus modi
+                            expedita.</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4">
+
+                    <div class="right-section">
+                        <h5>Create an account</h5>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder="Enter UserName">
+                                <i class="fas fa-user-tie"></i>
+                                <small>Username must be at least 3 characters</small>
+                            </div>
+                            <div class="form-input">
+                                <input type="eamil" placeholder="Enter Email">
+                                <i class="fas fa-envelope"></i>
+                                <small>Email is not valid</small>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder="Enter Password">
+                                <i class="fas fa-key"></i>
+                                <small>Password must be at least 6 characters</small>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder="Confirm Password">
+                                <i class="fas fa-key"></i>
+                                <small>Passwords do not match</small>
+                            </div>
+
+                            <div class="form-btn">
+                                <button class="disable" disabled type="submit">Register</button>
+                            </div>
+                            <div class="back-link">
+                                <p>Already have an account?</p>
+                                <a href="/login.html">Login</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 
     <!-- jquery  -->
     <script src="./assets/js/jquery.min.js"></script>
@@ -26,4 +106,5 @@
     <script src="./assets/js/main.js"></script>
 
 </body>
+
 </html>
