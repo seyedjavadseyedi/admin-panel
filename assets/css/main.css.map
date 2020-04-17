@@ -5,7 +5,7 @@
         "../sass/main.scss",
         "../sass/base/_rest.scss",
         "../sass/base/_typography.scss",
-        "../sass/pages/_sign-up.scss"
+        "../sass/pages/_sign-up-in.scss"
     ],
     "names": [],
     "file": "main.css"
