@@ -556,12 +556,12 @@ header .header-section .filter-section .time-left p {
   color: #00b4db;
 }
 
-.comments {
+.widget {
   position: relative;
   padding: 1rem;
 }
 
-.comments .title {
+.widget .title {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,7 +573,7 @@ header .header-section .filter-section .time-left p {
   padding-bottom: 0.5rem;
 }
 
-.comments .title::after {
+.widget .title::after {
   content: '';
   display: block;
   background: #000;
@@ -584,23 +584,23 @@ header .header-section .filter-section .time-left p {
   width: 100%;
 }
 
-.comments .title .title-text {
+.widget .title .title-text {
   text-transform: capitalize;
   font-weight: bold;
 }
 
-.comments .title .title-icon i {
+.widget .title .title-icon i {
   color: #FFEE03;
 }
 
-.comments .comment-section {
+.widget .content-section {
   padding: 0.7rem 0.5rem;
   overflow-y: scroll;
   max-height: 250px;
   margin: 0.5rem 0 2.5rem;
 }
 
-.comments .comment-section .comment {
+.widget .content-section .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,14 +609,14 @@ header .header-section .filter-section .time-left p {
           align-items: center;
 }
 
-.comments .comment-section .comment .avatar {
+.widget .content-section .item .avatar {
   width: 40px;
   height: 40px;
   border: 1px solid #FFEE03;
   border-radius: 50%;
 }
 
-.comments .comment-section .comment .comment-text {
+.widget .content-section .item .comment-text {
   color: #fff;
   background: #313D3E;
   border-radius: 5px;
@@ -625,28 +625,56 @@ header .header-section .filter-section .time-left p {
   max-width: 70%;
 }
 
-.comments .comment-section .comment .comment-text p {
+.widget .content-section .item .comment-text p {
   line-height: 20px;
   font-size: 0.8rem;
 }
 
-.comments .comment-section .reply {
+.widget .content-section .reply {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.comments .add-comment {
+.widget .content-section .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: #313D3E;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  max-width: 100%;
+}
+
+.widget .content-section .task p {
+  line-height: 20px;
+  font-size: 0.8rem;
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.widget .content-section .task i {
+  padding: 0.5rem;
+  color: #FFEE03;
+}
+
+.widget .add-section {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  background: #222A2B;
+  padding-top: 10px;
 }
 
-.comments .add-comment .write-comment {
+.widget .add-section .write-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,9 +683,11 @@ header .header-section .filter-section .time-left p {
           justify-content: space-between;
   background: #313D3E;
   border-radius: 5px;
+  width: 70%;
+  margin: auto;
 }
 
-.comments .add-comment .write-comment input {
+.widget .add-section .write-text input {
   padding: 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -665,19 +695,19 @@ header .header-section .filter-section .time-left p {
   color: #fff;
 }
 
-.comments .add-comment .write-comment button {
+.widget .add-section .write-text button {
   padding: 1rem;
 }
 
-.comments .add-comment .write-comment button i {
+.widget .add-section .write-text button i {
   color: #ABABAB;
 }
 
-.comments .add-comment .write-comment button:hover {
+.widget .add-section .write-text button:hover {
   cursor: pointer;
 }
 
-.comments .add-comment .write-comment button:hover i {
+.widget .add-section .write-text button:hover i {
   color: #00b4db;
 }
 

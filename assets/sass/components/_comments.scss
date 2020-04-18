@@ -1,4 +1,4 @@
-.comments {
+.widget {
     position: relative;    
     padding: 1rem;
     .title {
@@ -28,12 +28,12 @@
         }
     }
 
-    .comment-section {
+    .content-section {
         padding: 0.7rem 0.5rem;
         overflow-y: scroll;
         max-height: 250px;
         margin: 0.5rem 0 2.5rem;
-        .comment {
+        .item {
             display: flex;
             align-items: center;
             .avatar {
@@ -54,25 +54,50 @@
                     font-size: 0.8rem;
                 }
             }
+            
         }
         .reply {
             flex-direction: row-reverse;
         }
+        .task {
+            display: flex;
+            align-items: center;
+            color: #fff;
+                background: #313D3E;
+                border-radius: 5px;
+                padding: 0.7rem;
+                margin: 0.5rem;
+                max-width: 100%;
+                p {
+                    line-height: 20px;
+                    font-size: 0.8rem;
+                    margin-right: auto;
+                    margin-left: 5px;
+                }
+                i {
+                    padding: 0.5rem;
+                    color: #FFEE03;
+                }
+        }
     }
 
-    .add-comment {
+    .add-section {
         position: absolute;
         bottom: 10px;
         left: 0;
         right: 0;
-        width: 70%;
-        margin: auto;
+        width: 100%;
+        background: #222A2B;
+        padding-top: 10px;
 
-        .write-comment {
+        .write-text {
             display: flex;
             justify-content: space-between;
         background: #313D3E;
         border-radius: 5px;
+        width: 70%;
+        margin: auto;
+
 
 
             input {
