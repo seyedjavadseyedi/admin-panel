@@ -1,0 +1,29 @@
+.main-content{
+    background: linear-gradient(45deg, #004E92, #000428);
+    margin-left: 300px;
+    height: 100vh;
+    padding: 2rem;
+
+    .project {
+        padding: 1.5rem;
+        box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
+        border-left: 4px solid #008DB9;
+        background: linear-gradient(to left, #004E92, #000428);
+        .content {
+            h4 {
+                color: #fff;
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+            p {
+                color: #f5f5f5
+            }
+        }
+        .details { 
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

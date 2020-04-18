@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In To Dashboard</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="side-nav">
+            <div class="top-section">
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="user-info">
+                    <p>Welcome john doe</p>
+                    <div class="user-image">
+                        <img src="/assets/images/man.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-section">
+                <nav role="navigation">
+                    <ul class="main-nav">
+                        <li>
+                            <i class="fas fa-th-list"></i>
+                            <a href="#">dashboard</a>
+                        </li>
+                        <li class="active">
+                            <i class="fas fa-clipboard"></i>
+                            <a href="#">projects</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-tasks"></i>
+                            <a href="#">tasks</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-comments"></i>
+                            <a href="#">comments</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-cog"></i>
+                            <a href="#">account setting</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="page-title">
+                <h3>projects page</h3>
+                <p>20 projects found</p>
+            </div>
+            <div class="filter-section">
+                <div class="filter-item filter-search">
+                    <input type="text" placeholder="search for projects">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-item filter-select">
+                    <select>
+                        <option value="item-1">item-1</option>
+                        <option value="item-2">item-2</option>
+                        <option value="item-3">item-3</option>
+                        <option value="item-4">item-4</option>
+                    </select>
+                </div>
+                <div class="filter-item filter-checkbox">
+                    <label for="stop">stopped projects</label>
+                    <input type="checkbox" id="stop">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="main-content">
+        <article class="container project">
+            <div class="row">
+                <div class="col-9 content">
+                    <a href="#"><h4>project title</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab quaerat dolorum eos. Amet quisquam similique temporibus esse quae repudiandae!</p>
+                </div>
+                <div class="col-3 details">
+                    <span class="comments">14 comments</span>
+                    <span class="time-left">4 days / 10 hours</span>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <!-- jquery  -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- html5  -->
+    <script src="./assets/js/html5.js"></script>
+
+</body>
+
+</html>

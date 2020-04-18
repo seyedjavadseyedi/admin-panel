@@ -1,0 +1,68 @@
+header {
+    .header-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+        min-height: 160px;
+        background: #222A2B;
+        margin-left: 300px;
+        color: #fff;
+
+
+        .page-title {
+            h3 {
+                text-transform: capitalize;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            p {
+                opacity: 0.7;
+                font-size: 0.8rem;
+                line-height: 24px;
+            }
+        }
+
+        .filter-section {
+            display: flex;
+            .filter-item {
+                margin-right: 2rem;
+                border: 1px solid rgba(255,255,255,0.3);
+                border-radius: 5px;
+                min-width: 250px;
+            }
+
+            .filter-search {
+                input {
+                    color: #fff;
+                    padding: 0.5rem;
+                }
+                i {
+                    padding: 0.5rem
+                }
+            }
+            .filter-select {
+                select {
+                    width: 100%;
+                    border: 0;
+                    background: transparent;
+                    color: #fff;
+                    padding: 0.5rem;
+                }
+                option {
+                    border: 0;
+                    background: #222A2B;
+                    padding: 0.5rem 0;
+                }
+            }
+            .filter-checkbox  {
+                label {
+                    padding: 0.5rem;
+                    
+                }
+            }
+        }
+    }
+}

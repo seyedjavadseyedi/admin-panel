@@ -2,5 +2,10 @@
 @import 'base/rest';
 @import 'base/typography';
 
+// components
+@import 'components/header';
+@import 'components/side-nav';
+@import 'components/main';
+
 // pages 
 @import 'pages/sign-up-in'
