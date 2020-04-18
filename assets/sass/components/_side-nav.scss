@@ -53,6 +53,15 @@
                 color: #fff;
                 display: flex;
                 align-items: center;
+                transition: all 0.2s ease-in-out;
+                border-left: 2px solid #008DB9;
+
+                &:hover {
+                    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+                    a {
+                        color: #008DB9;
+                    }
+                }
                 &.active {
                     background: linear-gradient(to left, #004E92, #000428);
                 }

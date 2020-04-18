@@ -377,6 +377,18 @@ header .header-section .filter-section .filter-checkbox label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-left: 2px solid #008DB9;
+}
+
+.side-nav .nav-section .main-nav li:hover {
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav .nav-section .main-nav li:hover a {
+  color: #008DB9;
 }
 
 .side-nav .nav-section .main-nav li.active {
@@ -399,7 +411,7 @@ header .header-section .filter-section .filter-checkbox label {
 }
 
 .main-content {
-  background: linear-gradient(45deg, #004E92, #000428);
+  background: radial-gradient(#004E92, #000428);
   margin-left: 300px;
   height: 100vh;
   padding: 2rem;
@@ -407,22 +419,32 @@ header .header-section .filter-section .filter-checkbox label {
 
 .main-content .project {
   padding: 1.5rem;
+  border-left: 4px solid #008DB9;
+  background: #222A2B;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-content .project:hover {
   -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-  border-left: 4px solid #008DB9;
-  background: -webkit-gradient(linear, right top, left top, from(#004E92), to(#000428));
-  background: linear-gradient(to left, #004E92, #000428);
+}
+
+.main-content .project:hover .content h4 {
+  color: #008DB9;
 }
 
 .main-content .project .content h4 {
   color: #fff;
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 2rem;
 }
 
 .main-content .project .content p {
   color: #f5f5f5;
+  font-size: 0.9rem;
+  line-height: 28px;
 }
 
 .main-content .project .details {
@@ -434,6 +456,10 @@ header .header-section .filter-section .filter-checkbox label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main-content .project .details span {
+  font-size: 0.8rem;
 }
 
 .main-section {
