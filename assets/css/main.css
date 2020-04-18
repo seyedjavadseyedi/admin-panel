@@ -600,6 +600,11 @@ header .header-section .filter-section .time-left p {
   margin: 0.5rem 0 2.5rem;
 }
 
+.widget .content-section > p {
+  color: #fff;
+  line-height: 28px;
+}
+
 .widget .content-section .item {
   display: -webkit-box;
   display: -ms-flexbox;
