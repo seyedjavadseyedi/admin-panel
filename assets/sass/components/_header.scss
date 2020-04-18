@@ -50,17 +50,24 @@ header {
                     background: transparent;
                     color: #fff;
                     padding: 0.5rem;
+                    opacity: 0.8;
                 }
                 option {
-                    border: 0;
                     background: #222A2B;
-                    padding: 0.5rem 0;
                 }
             }
             .filter-checkbox  {
                 label {
                     padding: 0.5rem;
-                    
+                    opacity: 0.8;
+                }
+            }
+            .time-left {
+                padding: 0.5rem;
+                p {
+                    line-height: 26px;
+                    font-size: 0.9rem;
+                    opacity: 0.8;
                 }
             }
         }

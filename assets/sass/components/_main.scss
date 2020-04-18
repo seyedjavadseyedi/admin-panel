@@ -4,14 +4,19 @@
     height: 100vh;
     padding: 2rem;
 
-    .project {
-        padding: 1.5rem;
+    .card-theme {
         border-left: 4px solid #008DB9;
         background: #222A2B;
         margin-bottom: 1rem;
         transition: all 0.2s ease-in-out;
         &:hover {
         box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
+        }
+    }
+
+    .project {
+        padding: 1.5rem;
+        &:hover {
             .content h4 {
                 color: #008DB9;
             }

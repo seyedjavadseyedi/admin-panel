@@ -1,0 +1,64 @@
+.bar-theme {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .bar {
+    position: relative;
+    width: 70%;
+    background: #000;
+    height: 4px;
+    transition: 0.4s linear;
+    margin-top: 8px;
+
+    .bar-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .bar-fill {
+      height: 8px;
+      width: 30%;
+      background: #00b4db;
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+    .bar-percentage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 4px;
+      line-height: 4px;
+      color: rgba(0, 0, 0, 1);
+      width: 100%;
+    }
+  }
+
+  .edit-bar {
+    
+      i {
+          color: #FFEE03;
+          margin-right: 1rem;
+          font-size: 1.1rem;
+      }
+
+      span {
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      &:hover {
+          cursor: pointer;
+          span {
+            color: #00b4db;
+          }
+      }
+  }
+}

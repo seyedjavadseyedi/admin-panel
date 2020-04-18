@@ -297,16 +297,26 @@ header .header-section .filter-section .filter-select select {
   background: transparent;
   color: #fff;
   padding: 0.5rem;
+  opacity: 0.8;
 }
 
 header .header-section .filter-section .filter-select option {
-  border: 0;
   background: #222A2B;
-  padding: 0.5rem 0;
 }
 
 header .header-section .filter-section .filter-checkbox label {
   padding: 0.5rem;
+  opacity: 0.8;
+}
+
+header .header-section .filter-section .time-left {
+  padding: 0.5rem;
+}
+
+header .header-section .filter-section .time-left p {
+  line-height: 26px;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .side-nav {
@@ -417,8 +427,7 @@ header .header-section .filter-section .filter-checkbox label {
   padding: 2rem;
 }
 
-.main-content .project {
-  padding: 1.5rem;
+.main-content .card-theme {
   border-left: 4px solid #008DB9;
   background: #222A2B;
   margin-bottom: 1rem;
@@ -426,9 +435,13 @@ header .header-section .filter-section .filter-checkbox label {
   transition: all 0.2s ease-in-out;
 }
 
-.main-content .project:hover {
+.main-content .card-theme:hover {
   -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.main-content .project {
+  padding: 1.5rem;
 }
 
 .main-content .project:hover .content h4 {
@@ -460,6 +473,79 @@ header .header-section .filter-section .filter-checkbox label {
 
 .main-content .project .details span {
   font-size: 0.8rem;
+}
+
+.bar-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bar-theme .bar {
+  position: relative;
+  width: 70%;
+  background: #000;
+  height: 4px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  margin-top: 8px;
+}
+
+.bar-theme .bar .bar-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.bar-theme .bar .bar-fill {
+  height: 8px;
+  width: 30%;
+  background: #00b4db;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.bar-theme .bar .bar-percentage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  line-height: 4px;
+  color: black;
+  width: 100%;
+}
+
+.bar-theme .edit-bar i {
+  color: #FFEE03;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.bar-theme .edit-bar span {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.bar-theme .edit-bar:hover {
+  cursor: pointer;
+}
+
+.bar-theme .edit-bar:hover span {
+  color: #00b4db;
 }
 
 .main-section {

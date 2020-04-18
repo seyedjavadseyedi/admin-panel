@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects page</title>
+    <title>Details Project</title>
     <!-- font awesome css -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <!-- bootstrap css -->
@@ -60,66 +60,36 @@
         </div>
         <div class="header-section">
             <div class="page-title">
-                <h3>projects page</h3>
-                <p>20 projects found</p>
+                <h3>project page</h3>
+                <p>created by super admin at 4/16/2020</p>
             </div>
             <div class="filter-section">
-                <div class="filter-item filter-search">
-                    <input type="text" placeholder="search for projects">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="filter-item filter-select">
-                    <select>
-                        <option value="item-1">item-1</option>
-                        <option value="item-2">item-2</option>
-                        <option value="item-3">item-3</option>
-                        <option value="item-4">item-4</option>
-                    </select>
+                <div class="filter-item time-left">
+                   <p>tiem left: 5 days / 20 hours</p>
                 </div>
                 <div class="filter-item filter-checkbox">
-                    <label for="stop">stopped projects</label>
+                    <label for="stop">stopped project</label>
                     <input type="checkbox" id="stop">
+                </div>
+                <div class="filter-item filter-checkbox">
+                    <label for="finish">finish project</label>
+                    <input type="checkbox" id="finish">
                 </div>
             </div>
         </div>
     </header>
     <main role="main" class="main-content">
-        <article class="container project card-theme">
-            <div class="row">
-                <div class="col-9 content">
-                    <a href="#"><h4>project title</h4></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab quaerat dolorum eos. Amet quisquam similique temporibus esse quae repudiandae!</p>
-                </div>
-                <div class="col-3 details">
-                    <span class="comments">14 comments</span>
-                    <span class="time-left">4 days / 10 hours</span>
-                </div>
+        <div class="card-theme bar-theme">
+            <div class="bar" data-percentage="30%">
+                <div class="bar-title"><span>project progress</span></div>
+                <div class="bar-fill"></div>
+                <div class="bar-percentage"></div>
             </div>
-        </article>
-        <article class="container project card-theme">
-            <div class="row">
-                <div class="col-9 content">
-                    <a href="#"><h4>project title</h4></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab quaerat dolorum eos. Amet quisquam similique temporibus esse quae repudiandae!</p>
-                </div>
-                <div class="col-3 details">
-                    <span class="comments">14 comments</span>
-                    <span class="time-left">4 days / 10 hours</span>
-                </div>
+            <div class="edit-bar">
+                <i class="fas fa-edit"></i>
+                <span>edit project progress</span>
             </div>
-        </article>
-        <article class="container project card-theme">
-            <div class="row">
-                <div class="col-9 content">
-                    <a href="#"><h4>project title</h4></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ab quaerat dolorum eos. Amet quisquam similique temporibus esse quae repudiandae!</p>
-                </div>
-                <div class="col-3 details">
-                    <span class="comments">14 comments</span>
-                    <span class="time-left">4 days / 10 hours</span>
-                </div>
-            </div>
-        </article>
+        </div>
     </main>
 
 
