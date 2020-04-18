@@ -423,14 +423,14 @@ header .header-section .filter-section .time-left p {
 .main-content {
   background: radial-gradient(#004E92, #000428);
   margin-left: 300px;
-  height: 100vh;
+  height: 100%;
   padding: 2.5rem;
 }
 
 .main-content .card-theme {
   border-left: 4px solid #008DB9;
   background: #222A2B;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
