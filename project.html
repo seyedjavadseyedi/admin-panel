@@ -65,7 +65,7 @@
             </div>
             <div class="filter-section">
                 <div class="filter-item time-left">
-                   <p>tiem left: 5 days / 20 hours</p>
+                    <p>tiem left: 5 days / 20 hours</p>
                 </div>
                 <div class="filter-item filter-checkbox">
                     <label for="stop">stopped project</label>
@@ -79,17 +79,41 @@
         </div>
     </header>
     <main role="main" class="main-content">
-        <div class="card-theme bar-theme">
-            <div class="bar" data-percentage="30%">
-                <div class="bar-title"><span>project progress</span></div>
-                <div class="bar-fill"></div>
-                <div class="bar-percentage"></div>
-            </div>
-            <div class="edit-bar">
-                <i class="fas fa-edit"></i>
-                <span>edit project progress</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-theme bar-theme">
+                        <div class="bar" data-percentage="80%">
+                            <div class="bar-title">
+                                <span class="bar-text">project progress</span>
+                                <span class="bar-percent">80%</span>
+                            </div>
+                            <div class="bar-fill"></div>
+                            <div class="bar-percentage"></div>
+                        </div>
+                        <div class="edit-bar">
+                            <i class="fas fa-edit"></i>
+                            <span>edit project progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-theme comments">
+                            <div class="title">
+                                <span class="title-text">comments</span>
+                                <div class="title-icon">
+                                    <i class="fas fa-comments"></i>
+                                    <span>25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
 
 
@@ -99,6 +123,8 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- html5  -->
     <script src="./assets/js/html5.js"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
 
 </body>
 

@@ -424,7 +424,7 @@ header .header-section .filter-section .time-left p {
   background: radial-gradient(#004E92, #000428);
   margin-left: 300px;
   height: 100vh;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .main-content .card-theme {
@@ -493,8 +493,8 @@ header .header-section .filter-section .time-left p {
   width: 70%;
   background: #000;
   height: 4px;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
   margin-top: 8px;
 }
 
@@ -505,11 +505,19 @@ header .header-section .filter-section .time-left p {
   font-weight: bold;
   color: #fff;
   margin-bottom: 8px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar-theme .bar .bar-title .bar-percent {
+  margin-left: auto;
 }
 
 .bar-theme .bar .bar-fill {
   height: 8px;
-  width: 30%;
+  width: 0;
   background: #00b4db;
   position: absolute;
   left: 0;
